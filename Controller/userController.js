@@ -40,8 +40,8 @@ export const createUser = async (req, res) => {
 
         res.cookie('jwt', accessToken, {
             httpOnly: true,
-            secure: false, // ❗ set to true in production (requires HTTPS)
-            sameSite: 'Lax',
+            secure: true, // ❗ set to true in production (requires HTTPS)
+            sameSite: 'None',
             maxAge: 3600000 // 1 hour
         })
         return res.json({
@@ -82,8 +82,8 @@ export const loginUser = async (req, res) => {
 
         res.cookie('jwt', accessToken, {
             httpOnly: true,
-            secure: false, // ❗ set to true in production (requires HTTPS)
-            sameSite: 'Lax',
+            secure: true, // ❗ set to true in production (requires HTTPS)
+            sameSite: 'None',
             maxAge: 3600000 // 1 hour
         })
         return res.json({
