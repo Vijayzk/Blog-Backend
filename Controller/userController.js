@@ -13,7 +13,7 @@ export const createUser = async (req, res) => {
         const upload = await uploadFile(req.file.path)
 
         if (!name || !email || !password) {
-            return res.json({ message: 'Details required.' })
+            return res.json({ error: 'Details required.' })
         }
 
         const findUser = await prisma.user.findUnique({
@@ -23,7 +23,7 @@ export const createUser = async (req, res) => {
         })
 
         if (findUser) {
-            return res.json({ message: 'Email already in use.' })
+            return res.json({ error: 'Email already in use.' })
         }
 
         const user = await prisma.user.create({
@@ -49,7 +49,7 @@ export const createUser = async (req, res) => {
         });
     }
     catch (error) {
-        return res.json({ message: 'An error occured.', error });
+        return res.json({ error: 'An error occured.', error });
     }
 }
 
@@ -61,7 +61,7 @@ export const loginUser = async (req, res) => {
 
         if (!email || !password) {
             return res.json({
-                message: 'Provide Credential.'
+                error: 'Provide Credential.'
             })
         }
 
@@ -74,7 +74,7 @@ export const loginUser = async (req, res) => {
 
         if (!user) {
             return res.json({
-                message: "No user found with provided credential."
+                error: "No user found with provided credential."
             })
         }
 
@@ -91,7 +91,7 @@ export const loginUser = async (req, res) => {
         });
     }
     catch (error) {
-        return res.json({ message: 'An error occured.', error });
+        return res.json({ error: 'An error occured.', error });
     }
 
 }
