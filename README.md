@@ -3,24 +3,41 @@ This is a Node.js/Express backend project that includes authentication, file upl
 
 🚀 Features
 RESTful API built with Express
+
 Prisma ORM for database access
+
 Google OAuth 2.0 with Passport.js
+
 Session management with express-session
+
 JWT authentication
+
 File uploads via multer
+
 Cloudinary integration for media storage
+
 Environment-based configuration using dotenv
+
 Cross-Origin Resource Sharing enabled with cors
 
 📦 Tech Stack
+
 Node.js
+
 Express.js
+
 Prisma
+
 Passport.js
+
 Cloudinary
+
 JWT
+
 Multer
+
 Nodemon
+
 
 📁 Project Structure
 /backend
