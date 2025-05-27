@@ -2,7 +2,7 @@
 
 This is a Node.js/Express backend project that includes authentication, file uploads, database integration using Prisma, and support for session management and third-party OAuth (Google).
 
-🚀 Features
+# 🚀 Features
 
 RESTful API built with Express
 
@@ -22,7 +22,7 @@ Environment-based configuration using dotenv
 
 Cross-Origin Resource Sharing enabled with cors
 
-📦 Tech Stack
+# 📦 Tech Stack
 
 Node.js
 
@@ -41,7 +41,7 @@ Multer
 Nodemon
 
 
-📁 Project Structure
+# 📁 Project Structure
 
 /backend
 
@@ -60,21 +60,22 @@ Nodemon
 └── .env                 # Environment variables
 
 
-🛠️ Installation
+# 🛠️ Installation
 
-# Clone the repository
+Clone the repository
 
-git clone https://github.com/your-username/backend.git](https://github.com/Vijayzk/Blog-Backend.git
+git clone - https://github.com/Vijayzk/Blog-Backend.git
+
 cd backend
 
-# Install dependencies
+Install dependencies
 
 npm install
 
-⚙️ Configuration
+# ⚙️ Configuration
 
 Create a .env file in the root directory and add your environment variables:
-env
+
 PORT=5000
 
 DATABASE_URL=your_prisma_database_url
@@ -93,17 +94,17 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 SESSION_SECRET=your_session_secret
 
-🚀 Running the Server
+# 🚀 Running the Server
 
-# For development with auto-reloading
+For development with auto-reloading
 
 npm run server
 
-# For production
+For production
 
 npm start
 
-🧪 API Endpoints
+# 🧪 API Endpoints
 
 You'll want to document your endpoints here. Example:
 
@@ -115,7 +116,7 @@ POST /upload - Upload media
 
 GET /profile - Fetch authenticated user data
 
-📝 Scripts
+# 📝 Scripts
 
 npm start – Starts the server using Node
 
